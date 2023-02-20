@@ -114,16 +114,16 @@ export default {
   .container {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 48%;
     width: 350px;
     margin: -190px 0 0 -175px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(45deg, black, transparent);
 
     .login-title {
       line-height: 50px;
       width: 100%;
-      color: white;
+      color: floralwhite;
       text-align: center;
       border-bottom: 2px solid #ddd;
     }
@@ -137,7 +137,7 @@ export default {
     }
 
     .login-tips {
-      color: #fff;
+      color: floralwhite;
       font-size: 12px;
       text-align: left;
       margin-top: -8px;

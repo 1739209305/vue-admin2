@@ -258,9 +258,28 @@ const auth_router = {
       id: 1,
       pid: 0,
       path: 'dashboard',
-      name: 'views/dashboard',
+      name: 'views/Dashboard',
       link: '/layout/dashboard',
+      icon: 'el-icon-s-home',
       title: '首页'
+    },
+    {
+      id: 2,
+      pid: 0,
+      path: 'guide',
+      name: 'views/guide/Index',
+      link: '/layout/guide',
+      icon: 'el-icon-position',
+      title: '引导页'
+    },
+    {
+      id: 3,
+      pid: 0,
+      path: 'website',
+      name: 'views/website/Index',
+      link: '/layout/website',
+      icon: 'el-icon-eleme',
+      title: '网站'
     }
   ]
 }

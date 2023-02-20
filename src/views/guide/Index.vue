@@ -9,7 +9,7 @@
     <el-alert title="用于给用户指导" :closable="false" type="info"> </el-alert>
 
     <el-button
-      style="margin-top: 1rem"
+      style="margin-left: 24px; margin-top: 8px"
       icon="el-icon-question"
       type="primary"
       @click.prevent.stop="guide"

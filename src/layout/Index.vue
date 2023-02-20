@@ -47,4 +47,7 @@ export default {
   -webkit-box-shadow: 0 1px 4px rgb(0 21 41 / 8%);
   box-shadow: 0 1px 4px rgb(0 21 41 / 8%);
 }
+.layout-container .el-main {
+  background: #f3f3f3;
+}
 </style>

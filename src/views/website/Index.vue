@@ -22,6 +22,14 @@ export default {
     return {
       websiteList: [
         {
+          type: 'CSDN博文(日常写的小博文哈哈哈！！！技术分享了！！！)',
+          list: [
+            {
+              url: 'https://blog.csdn.net/weixin_45044818?type=blog'
+            }
+          ]
+        },
+        {
           type: 'CDN库',
           list: [
             {
@@ -31,19 +39,47 @@ export default {
           ]
         },
         {
+          type: '图标库',
+          list: [
+            {
+              url: 'https://www.iconfont.cn/plus'
+            }
+          ]
+        },
+        {
+          type: '图片压缩',
+          list: [
+            {
+              url: 'https://caesium.app/'
+            }
+          ]
+        },
+        {
+          type: '在线工具',
+          list: [
+            {
+              url: 'https://tool.lu/'
+            }
+          ]
+        },
+        {
           type: 'UI库',
           list: [
             {
               description: 'Element UI',
               url: 'https://element.eleme.io/'
+            },
+            {
+              description: 'NG-ZORRO',
+              url: 'https://ng-zorro.gitee.io/components/overview/zh'
             }
           ]
         },
         {
-          type: 'threejs',
+          type: 'Threejs',
           list: [
             {
-              description: 'threejs官网',
+              description: 'Threejs官网',
               url: 'https://threejs.org/'
             },
             {

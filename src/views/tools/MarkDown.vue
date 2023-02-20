@@ -3,10 +3,9 @@
     <el-alert
       style="margin-bottom: 1rem"
       title="https://github.com/hinesboy/mavonEditor"
-      :closable="false"
       type="info"
     ></el-alert>
-    <mavon-editor v-model="context" />
+    <mavon-editor v-model="context" :toolbars="markdownOption" />
   </div>
 </template>
 <script>
@@ -23,7 +22,7 @@ vue项目中使用threejs无语法提示问题
 > npm install --save-dev @types/three
 
 再次重新引入即可`, //输入的数据
-      toolbars: {
+      markdownOption: {
         bold: true, // 粗体
         italic: true, // 斜体
         header: true, // 标题
@@ -53,3 +52,9 @@ vue项目中使用threejs无语法提示问题
   }
 }
 </script>
+
+<style lang="scss">
+::v-deep .markdown-body * {
+  font-size: 10px;
+}
+</style>
