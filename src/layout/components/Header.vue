@@ -16,13 +16,15 @@
     </div>
     <div class="layout-header-right">
       <!-- <screenfull></screenfull> -->
-      <el-dropdown trigger="click" class="avatar">
+      <el-dropdown @command="handleCommand" trigger="click" class="avatar">
         <span class="el-dropdown-link">
           <el-avatar :src="avatarUrl"></el-avatar>
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item command="a">Github</el-dropdown-item>
-          <el-dropdown-item command="e" divided>退出登录</el-dropdown-item>
+          <el-dropdown-item disabled>Github</el-dropdown-item>
+          <el-dropdown-item divided command="loginOut"
+            ><span>退出登录</span></el-dropdown-item
+          >
         </el-dropdown-menu>
       </el-dropdown>
     </div>
@@ -40,12 +42,35 @@ export default {
   components: {
     screenfull
   },
+  mounted() {
+    this.clientChange()
+    window.onresize = () => {
+      this.clientChange()
+    }
+  },
   methods: {
     changeCollapseState() {
       this.$store.commit(
         'settings/CHANGE_COLLAPSE',
         !this.$store.state.settings.isCollapse
       )
+    },
+    clientChange() {
+      this.$store.commit(
+        'settings/CHANGE_COLLAPSE',
+        document.body.clientHeight > document.body.clientWidth
+      )
+    },
+    handleCommand(command) {
+      console.log(command)
+      if (command === 'loginOut') {
+        this.loginOut()
+      }
+    },
+    loginOut() {
+      this.$router.push({
+        path: '/login'
+      })
     }
   }
 }

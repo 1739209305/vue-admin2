@@ -251,6 +251,15 @@ const auth_router = {
       link: '/layout/performance/throttle',
       icon: 'el-icon-menu',
       title: '节流'
+    },
+    {
+      id: 28,
+      pid: 0,
+      path: 'card',
+      name: 'views/card/Index',
+      link: '/layout/card',
+      icon: 'el-icon-user',
+      title: '联系方式'
     }
   ],
   vistor_token: [
@@ -280,6 +289,42 @@ const auth_router = {
       link: '/layout/website',
       icon: 'el-icon-eleme',
       title: '网站'
+    },
+    {
+      id: 21,
+      pid: 0,
+      path: 'threejs',
+      name: 'views/threejs/Index',
+      link: '/layout/threejs',
+      icon: 'el-icon-view',
+      title: '3D'
+    },
+    {
+      id: 22,
+      pid: 21,
+      path: 'car',
+      name: 'views/threejs/Car',
+      link: '/layout/threejs/car',
+      icon: 'el-icon-menu',
+      title: '跑车'
+    },
+    {
+      id: 22,
+      pid: 21,
+      path: 'chair',
+      name: 'views/threejs/Chair',
+      link: '/layout/threejs/chair',
+      icon: 'el-icon-menu',
+      title: '椅子'
+    },
+    {
+      id: 28,
+      pid: 0,
+      path: 'card',
+      name: 'views/card/Index',
+      link: '/layout/card',
+      icon: 'el-icon-user',
+      title: '联系方式'
     }
   ]
 }
